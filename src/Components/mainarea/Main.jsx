@@ -29,6 +29,14 @@ const Main = () => {
 
     const notify = () => toast("Already Added!");
 
+    const [newFood, setNewFood] = useState([]);
+    const cookFood = (ids) => {
+        const newFoods = foods.filter((id) => id.recipe_id !== ids.recipe_id);
+        setFoods(newFoods);
+        const newCooking = [...newFood, ids];
+        setNewFood(newCooking);
+    };
+
     return (
         <div className="container mx-auto">
             <div>
@@ -46,7 +54,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="md:w-2/5 w-full">
-                    <Cooking foods={foods}></Cooking>
+                    <Cooking foods={foods} cookFood={cookFood} newFood={newFood}></Cooking>
                 </div>
             </div>
             <ToastContainer />

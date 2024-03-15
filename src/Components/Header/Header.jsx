@@ -25,7 +25,8 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-3xl font-bold lexend">Recipe Calories</a>
+                    <a className="btn btn-ghost text-3xl font-bold lexend hidden md:block">Recipe Calories</a>
+                    <a className="btn btn-ghost text-3xl font-bold lexend md:hidden">RC</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 lexend">
@@ -48,7 +49,7 @@ const Header = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                             <path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" />
                         </svg>
-                        <input type="text" className="grow lexend" placeholder="Search" />
+                        <input type="text" className="grow lexend hidden md:block" placeholder="Search" />
                     </label>
                     <a className="lexend">
                         <img src={profileicon} />

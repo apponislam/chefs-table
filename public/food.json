@@ -1,0 +1,74 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_name": "Chicken Stir Fry",
+        "recipe_image": "https://i.ibb.co/0G8jLzh/Chicken-Stir-Fry.png",
+        "short_description": "A delicious and savory chicken stir fry with vegetables.",
+        "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushrooms"],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+    },
+    {
+        "recipe_id": 2,
+        "recipe_name": "Vegetable Pasta",
+        "recipe_image": "https://i.ibb.co/hFbR02Z/Vegetable-Pasta.png",
+        "short_description": "A flavorful pasta dish loaded with fresh vegetables.",
+        "ingredients": ["300 g pasta", "150 g broccoli", "200 g cherry tomatoes", "100 g spinach", "50 g Parmesan cheese"],
+        "preparing_time": "25 min",
+        "calories": "280 calories"
+    },
+    {
+        "recipe_id": 3,
+        "recipe_name": "Grilled Salmon",
+        "recipe_image": "https://i.ibb.co/CwQMYqG/Grilled-Salmon.png",
+        "short_description": "Tender and juicy grilled salmon seasoned with herbs.",
+        "ingredients": ["4 salmon fillets", "60 ml olive oil", "2 cloves garlic", "1 lemon", "Salt and pepper to taste"],
+        "preparing_time": "20 min",
+        "calories": "250 calories"
+    },
+    {
+        "recipe_id": 4,
+        "recipe_name": "Vegetarian Chili",
+        "recipe_image": "https://i.ibb.co/0ZBXfGH/Vegetarian-Chili.png",
+        "short_description": "Hearty and comforting vegetarian chili packed with beans and spices.",
+        "ingredients": ["400 g kidney beans", "200 g black beans", "1 onion", "2 bell peppers", "400 g diced tomatoes", "Chili powder, cumin, and paprika to taste"],
+        "preparing_time": "40 min",
+        "calories": "290 calories"
+    },
+    {
+        "recipe_id": 5,
+        "recipe_name": "Spinach Salad",
+        "recipe_image": "https://i.ibb.co/j8Kk9Zy/Spinach-Salad.png",
+        "short_description": "A refreshing spinach salad with a tangy vinaigrette dressing.",
+        "ingredients": ["200 g baby spinach", "100 g strawberries", "50 g feta cheese", "30 g walnuts", "60 ml balsamic vinaigrette"],
+        "preparing_time": "15 min",
+        "calories": "180 calories"
+    },
+    {
+        "recipe_id": 6,
+        "recipe_name": "Banana Smoothie",
+        "recipe_image": "https://i.ibb.co/PDMHszm/Banana-Smoothie.png",
+        "short_description": "Creamy and nutritious banana smoothie perfect for breakfast or a snack.",
+        "ingredients": ["2 ripe bananas", "250 ml milk", "50 g Greek yogurt", "1 tablespoon honey", "Ice cubes"],
+        "preparing_time": "5 min",
+        "calories": "220 calories"
+    },
+    {
+        "recipe_id": 7,
+        "recipe_name": "Homemade Pizza",
+        "recipe_image": "https://i.ibb.co/mrjK8RF/Homemade-Pizza.png",
+        "short_description": "A classic homemade pizza with your favorite toppings.",
+        "ingredients": ["Pizza dough", "Tomato sauce", "Cheese", "Pepperoni", "Bell peppers", "Onions", "Mushrooms"],
+        "preparing_time": "35 min",
+        "calories": "350 calories"
+    },
+    {
+        "recipe_id": 8,
+        "recipe_name": "Chocolate Chip Cookies",
+        "recipe_image": "https://i.ibb.co/dD4J7jS/Chocolate-Chip-Cookies.png",
+        "short_description": "Soft and chewy chocolate chip cookies that are perfect for dessert or a snack.",
+        "ingredients": ["200 g butter", "150 g brown sugar", "100 g granulated sugar", "2 eggs", "300 g all-purpose flour", "200 g chocolate chips"],
+        "preparing_time": "12 min",
+        "calories": "200 calories"
+    }
+]

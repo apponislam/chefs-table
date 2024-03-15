@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Food from "../Food/Food";
 import Cooking from "../Cooking/Cooking";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Main = () => {
     const [food, setFood] = useState([]);
@@ -10,6 +12,22 @@ const Main = () => {
             .then((response) => response.json())
             .then((json) => setFood(json));
     }, []);
+
+    const [foods, setFoods] = useState([]);
+    const [clicked, setclicked] = useState([]);
+    const addToCook = (food) => {
+        const foodid = food.recipe_id;
+        const newClick = [...clicked, foodid];
+        setclicked(newClick);
+        if (!clicked.includes(foodid)) {
+            const newCook = [...foods, food];
+            setFoods(newCook);
+        } else {
+            notify();
+        }
+    };
+
+    const notify = () => toast("Already Added!");
 
     return (
         <div className="container mx-auto">
@@ -23,14 +41,15 @@ const Main = () => {
                 <div className="md:w-3/5 w-full">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-3 md:gap-6">
                         {food.map((food, idx) => (
-                            <Food key={idx} food={food}></Food>
+                            <Food key={idx} food={food} addToCook={addToCook} onClick={notify}></Food>
                         ))}
                     </div>
                 </div>
                 <div className="md:w-2/5 w-full">
-                    <Cooking></Cooking>
+                    <Cooking foods={foods}></Cooking>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

@@ -3,7 +3,7 @@ import { CiClock2 } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 import Ingredient from "../Ingredient/Ingredient";
 
-const Food = ({ food }) => {
+const Food = ({ food, addToCook }) => {
     // const { calories, ingredients, preparing_time, recipe_id, recipe_image, recipe_name, short_description } = food;
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = food;
     // console.log(food);
@@ -30,13 +30,18 @@ const Food = ({ food }) => {
                 </span>
                 <span>{calories}</span>
             </div>
-            <button className="btn text-[18px] lexend font-medium py-3 px-6 rounded-full bg-[#0BE58A]">Want to Cook</button>
+            <button onClick={() => addToCook(food)} className="btn text-[18px] lexend font-medium py-3 px-6 rounded-full bg-[#0BE58A]">
+                Want to Cook
+            </button>
         </div>
     );
 };
 
 Food.propTypes = {
     food: PropTypes.object.isRequired,
+    addToCook: PropTypes.func,
+    notify: PropTypes.func,
+    setclicked: PropTypes.bool,
 };
 
 export default Food;

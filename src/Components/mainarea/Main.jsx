@@ -42,10 +42,10 @@ const Main = () => {
             <div>
                 <h1 className="text-[40px] mb-6 text-center lexend text-black font-semibold">Our Recipes</h1>
                 <p className="lexend text-center text-black mb-12">
-                    Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br className="hidden md:block" /> urna volutpat curabitur elementum mauris aenean neque.
+                    Discover Our Delicious Recipes: Explore a Variety of Tastes, from Comforting Classics <br className="hidden md:block" /> to Exotic Flavors. Start Cooking Today!
                 </p>
             </div>
-            <div className="flex gap-6 flex-col md:flex-row">
+            <div className="flex gap-6 flex-col md:flex-row mb-10">
                 <div className="md:w-3/5 w-full">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-3 md:gap-6">
                         {food.map((food, idx) => (

@@ -3,7 +3,7 @@ const Heroarea = () => {
     return (
         <div className="container mx-auto">
             <div className="md:p-[130px] p-4 mx-3 md:mx-0 bg-no-repeat bg-cover rounded-3xl md:mb-24 mb-7" style={{ backgroundImage: `url(${mainbg})` }}>
-                <h1 className="md:text-[52px] text-3xl font-bold lexend text-center text-white mb-6">
+                <h1 className="md:text-[52px] text-3xl font-bold lexend text-center text-white mb-6 leading-relaxed">
                     Discover an exceptional cooking <br /> class tailored for you!
                 </h1>
                 <p className="text-[18px] lexend text-center text-white mb-10">

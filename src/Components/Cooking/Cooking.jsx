@@ -19,8 +19,8 @@ const Cooking = ({ foods, cookFood, newFood }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {foods.map((food, idx, index) => (
-                        <Cook key={idx} food={food} cookFood={cookFood} number={index + 1}></Cook>
+                    {foods.map((food, index) => (
+                        <Cook key={food.recipe_id} index={index} food={food} cookFood={cookFood}></Cook>
                     ))}
                 </tbody>
             </table>
@@ -37,8 +37,8 @@ const Cooking = ({ foods, cookFood, newFood }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {newFood.map((food, idx) => (
-                        <Cook2 key={idx} food={food}></Cook2>
+                    {newFood.map((food, index) => (
+                        <Cook2 index={index} food={food} key={food.recipe_name}></Cook2>
                     ))}
                 </tbody>
                 <tfoot>
